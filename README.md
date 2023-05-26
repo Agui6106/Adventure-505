@@ -1,5 +1,7 @@
 # Adventure-N505
 
+# Jose Alberto Aguilar Sanchez - A01735612
+
 Este proyecto es un prototipo para un videojuego tipo RPG de aventrua basado en texto. Para esta version se considerarn las siguientes funciones. Cabe recalcar que es una version de prueba sujeta a cambios.
 
 ## Funciones
