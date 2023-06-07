@@ -1,24 +1,23 @@
 # Adventure-P505
-
 # Jose Alberto Aguilar Sanchez - A01735612
 
-Este proyecto tiene la finalidad de ser un prototipo para un videojuego tipo RPG de aventrua basado en texto, plantenado las operaciones basicas de un juego de este estilo. Las funciones principales para este programa son.
+Este proyecto tiene la finalidad de ser un prototipo para un videojuego tipo RPG de aventura basado en texto, planteando las operaciones básicas de un juego de este estilo. Las funciones principales para este programa son:
 
-1. Consultar el estado del personaje. Nos permite conocer el estado de nuestro jugador junto con sus stast y propiedades
-2. Descansar. Permite al jugador "descansar" para recuperar algo de vida
-3. Viaje. Permite emrpender el viaje a alguan de las zonas pre programadas para entamblar combate con algun enemigo de esa zona.
+1. Consultar el estado del personaje: nos permite conocer el estado de nuestro jugador junto con sus stats y propiedades.
+2. Descansar: permite al jugador "descansar" para recuperar algo de vida.
+3. Viaje: permite emprender el viaje a alguna de las zonas preprogramadas para entablar combate con algún enemigo de esa zona.
 4. Cerrar el programa.
 
-Asi mismo podemos editar el nombre del jugador y al entamblar combate sus stats pueden ser modificadas como vida y resistencia.
+Asimismo, podemos editar el nombre del jugador y al entablar combate, sus stats pueden ser modificadas, como vida y resistencia.
 
 # Clases y objetos
-El proyecto consta de varias clases compuestas y por herencia, tales que.
+El proyecto consta de varias clases compuestas y por herencia, tales como:
 
 ### Clase Espada
 La clase "Espada" representa un objeto de espada con atributos como el nombre, el daño, la resistencia y la capacidad crítica.
 
 ### Clase Personaje
-La clase "Personaje" representa un personaje en un juego y proporciona funcionalidades relacionadas con su creación, atributos y acciones. Esta clase esta compuesta por "Espada".
+La clase "Personaje" representa un personaje en un juego y proporciona funcionalidades relacionadas con su creación, atributos y acciones. Esta clase está compuesta por "Espada".
 
 ### Clase Jugador
 La clase "Jugador" es una subclase de la clase "Personaje" y representa al jugador principal en el juego. Esta clase agrega funcionalidades específicas del jugador y tiene la capacidad de interactuar en el juego como el usuario principal.
@@ -27,15 +26,14 @@ La clase "Jugador" es una subclase de la clase "Personaje" y representa al jugad
 La clase "Malvado" es una subclase de la clase "Personaje" y representa a un personaje malvado en el juego. Esta clase hereda los atributos y métodos de la clase "Personaje" y agrega funcionalidades específicas para el personaje malvado.
 
 # Main
-Dentro de nuestra funcion pricnipal (main) utilziamso las librerias stdlib y time para generar numeros aleatorios que utilizaremos en funciones mas adelante.
+Dentro de nuestra función principal utilizamos las librerías stdlib y time para generar números aleatorios que utilizaremos en funciones más adelante.
 
-Asi mismo tenemos una funcion para entamblar combate, esta funcion representa una secuencia de combate entre el jugador y un enemigo en un juego. Toma como argumentos un entero x que indica el rango de números aleatorios para determinar el encuentro con enemigos, un puntero a un objeto Personaje representando al primer enemigo, un puntero a un objeto Personaje representando al segundo enemigo, y un objeto Jugador que representa al usuario. Utilzia ifs anidados para tomar decisiones utilizando las inputs del usuario y numeros generados aleatoriamente para simular las probaabildiades de fallar un ataque.
+Asimismo, tenemos una función para entablar combate, la cual representa una secuencia de combate entre el jugador y un enemigo en un juego. Toma como argumentos un entero x que indica el rango de números aleatorios para determinar el encuentro con enemigos, un puntero a un objeto Personaje representando al primer enemigo, un puntero a un objeto Personaje representando al segundo enemigo, y un objeto Jugador que representa al usuario. Utiliza ifs anidados para tomar decisiones utilizando las inputs del usuario y números generados aleatoriamente para simular las probabilidades de fallar un ataque.
 
-Para la generacion de la intefaz de interaccion del programa con el suario se utilzian un switch dependiendo de lo que el usuario ingrese a la consola de acuerdo a las opciones, en caso de que ingresa una opcion no valida no entrara denbtro del switch y vovler a pedir una opcion.
+Para la generación de la interfaz de interacción del programa con el usuario, se utiliza un switch dependiendo de lo que el usuario ingrese en la consola, de acuerdo a las opciones. En caso de que ingrese una opción no válida, no entrará dentro del switch y volverá a pedir una opción.
 
 # Bugs conocidos y consideraciones
-Para correr el codigo en un PC, basta con descargar el archivo "main.exe", sin embargo aqui hay una lsita de bugs conocidos hasta el momento
+Para correr el código en una PC, basta con descargar el archivo "main.exe". Sin embargo, aquí hay una lista de bugs conocidos hasta el momento:
 
-1. Al ingresa la opcion "y/n" utilizar unicamnte minusculas.
-2. Problema al guardar la nueva salud despues de entamblar combate.
-
+1. Al ingresar la opción "y/n", utilizar únicamente minúsculas.
+2. Problema al guardar la nueva salud después de entablar combate.
